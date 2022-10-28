@@ -1,0 +1,13 @@
+:root {
+  --pink: #f6e1d4;
+  --black: #39394c;
+  --blue: #bcd1eb;
+}
+
+body {
+  background-color: var(--pink);
+}
+
+footer {
+  background-color: var(--blue);
+}
