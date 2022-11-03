@@ -8,6 +8,118 @@ body {
   background-color: var(--pink);
 }
 
-footer {
-  background-color: var(--blue);
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.button {
+  border: 3px solid blue;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+/*.menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+*/
+
+.menu {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s;
+  overflow-anchor: none;
+}
+
+.menu_line {
+  position: absolute;
+  left: 3px;
+  width: 23px;
+  height: 2px;
+  background: #38394d;
+}
+
+.button1::before {
+  top: 6px;
+}
+
+.button1::after {
+  top: 22px;
+}
+
+.button2 {
+  top: 14px;
+  transition: opacity 0.5s ease, background 0.4s ease;
+}
+
+.button3 {
+  top: 22px;
+  transition: transform 0.5s ease 0.1s, background 0.4s ease 0ms;
+}
+
+.menu_button:active {
+  background-color: aqua;
+}
+
+/*
+.button1,
+.button3 {
+  width: 23px;
+  height: 2px;
+  background-color: var(--black);
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+.button2 {
+  width: 23px;
+  height: 2px;
+  background-color: var(--black);
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button1 {
+  transform: translateY(-16px);
+}
+
+.button1:hover {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.button3 {
+  transform: translateY(16px);
+}
+
+.menu_button:active {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.button3 {
+  transform: ro;
+}
+*/
+.other_button {
+  display: flex;
+}
+img {
+  height: 53px;
 }
