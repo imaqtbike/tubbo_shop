@@ -5,8 +5,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .product {
     flex-wrap: wrap;
+  }
+  .container {
+    margin: 0;
   }
 }

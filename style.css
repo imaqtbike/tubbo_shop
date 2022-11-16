@@ -6,6 +6,24 @@
   --gray: #808080;
 }
 
+@media (max-width: 992px) {
+  .search_button,
+  .shop_button {
+    margin: -19px 5px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-wrap: wrap;
+  }
+  .container {
+    margin-bottom: 0;
+  }
+  .the_end {
+    padding-right: 0;
+  }
+}
 @import url(media.css);
 
 body {
@@ -31,23 +49,6 @@ header {
   background-color: transparent;
   transition: background-color 0.5s;
 }
-
-/*.menu_button {
-  margin: -22px 0px 0px 4px;
-  position: relative;
-}
-*/
-
-/*.menu {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-*/
 
 .menu {
   position: relative;
@@ -137,15 +138,16 @@ header {
 .shop_button {
   color: var(--dark_gray);
   font-family: "Roboto", sans-serif;
-
-  /*  margin: -19px 5px 0px 0px;*/
+  position: relative;
 }
 
 .shop_button div {
   position: absolute;
-  top: 44px;
+  top: 20px;
   font-size: 10px;
 }
+
+/*  CONTAINER  */
 
 .container {
   margin-bottom: 175px;
@@ -166,6 +168,18 @@ header {
 
 .item img {
   height: 580px;
+  animation: zoom-in 1s linear 1;
+}
+
+/* KEYFRAME */
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 h1 {
@@ -178,15 +192,7 @@ h1 {
 footer {
   background-color: var(--blue);
 }
-
-/* margin content cho 0 10% den khi media thi bo */
-
-/*.infor {
-  display:flex;
-  flex-wrap: wrap;
-  space-between}
-  
-  ensure the foot_infor have same height
+/*ensure the foot_infor have same height
   */
 footer {
   padding: 0 90px 56px 90px;
